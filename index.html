@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Empresa focada em serviços de terraplanagem e infraestrutura.">
+  <title>Empresa ...</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/png" href="logoempresa.ico">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+<!-- Menu Lateral -->
+<nav class="menu-lateral ">
+
+  <div class="btn-expandir">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg></span>
+  </div> <!-- botão de expandir -->
+             
+      <br>
+<div class="navegacao">
+  <ul>
+    <li class="item-menu"><a href="#inicio"><span class="txt-link">INÍCIO</span></a></li>
+    <li class="item-menu"><a href="#sobre"><span class="txt-link">SOBRE</span></a></li>
+    <li class="item-menu"><a href="#portfolio"><span class="txt-link">PORTFOLIO</span></a></li>
+    <li class="item-menu"><a href="#servicos"><span class="txt-link">SERVIÇOS</span></a></li>
+    <li class="item-menu"><a href="#depoimentos"><span class="txt-link">DEPOIMENTOS</span></a></li>
+    <li class="item-menu"><a href="#localizacao"><span class="txt-link">LOCALIZAÇÃO</span></a></li>
+    <li class="item-menu"><a href="#contato"><span class="txt-link">TRABALHE CONOSCO</span></a></li>
+    <li class="item-menu"><a href="#faq"><span class="txt-link">PERGUNTAS FREQUENTES</span></a></li>
+  </ul>
+</div>
+</nav>
+<script>
+  // Seleciona a navbar
+  const nav = document.querySelector('nav');
+
+  // Adiciona evento de scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) { // Ajuste o valor conforme necessário
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script>
+  const menuLateral = document.querySelector('.menu-lateral');
+  const botaoExpandir = document.querySelector('.btn-expandir');
+
+  botaoExpandir.addEventListener('click', () => {
+      menuLateral.classList.toggle('ativo');
+  });
+</script>
+
+<!-- Conteúdo -->
+<div class="container content">
+  <section class="secao" id="inicio">
+    <div class="titulo">  
+      <h2>Bem-vindo ao site Empresarial!</h2>
+    </div>
+
+    <div class="sobre-container">
+      <p>
+        Lorem ipsum dolor sit amet. Et mollitia rerum ab enim mollitia sit quis sapiente non rerum ullam. Vel enim veritatis aut aperiam soluta 33 quam soluta sit recusandae corporis! Et voluptatibus error ut iure obcaecati ut pariatur galisum eos doloribus enim et deserunt repellat. Sed possimus perspiciatis et perferendis porro ut magnam consectetur sit accusamus earum nam unde corrupti 33 excepturi provident qui internos libero.
+      </p>
+    </div>
+  </section>
+
+
+<section class="secao" id="sobre">
+    <div class="sobre-container">
+      <p>
+        Lorem ipsum dolor sit amet. Et mollitia rerum ab enim mollitia sit quis sapiente non rerum ullam. Vel enim veritatis aut aperiam soluta 33 quam soluta sit recusandae corporis! Et voluptatibus error ut iure obcaecati ut pariatur galisum eos doloribus enim et deserunt repellat. Sed possimus perspiciatis et perferendis porro ut magnam consectetur sit accusamus earum nam unde corrupti 33 excepturi provident qui internos libero.
+      </p>
+    </div>
+</section>
+
+
+<section id="portfolio" class="secao">
+    <div class="titulo">  
+      <h2>Nosso Portfólio</h2>
+    </div>
+
+    <div class="portfolio-container">
+      <div class="projeto-card">
+        <img src="imagens/1-PROCESSO-EMPRESARIAL.jpg" alt="Projeto 1">
+        <h3>Lorem ipsum dolor</h3>
+        <p>orem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias. Eos debitis harum rem quia aliquid sit earum accusamus non assumenda nostrum et minima nesciunt est nemo omnis?</p>
+      </div>
+      <div class="projeto-card">
+        <img src="imagens/195088-como-o-publico-te-ve-o-que-e-a-imagem-empresarial.jpg" alt="Projeto 2">
+        <h3>Lorem ipsum dolor</h3>
+        <p>orem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias. Eos debitis harum rem quia aliquid sit earum accusamus non assumenda nostrum et minima nesciunt est nemo omnis?</p>
+      </div>
+      <div class="projeto-card">
+        <img src="imagens/consultoria-empresarial-o-que-e-tipos-e-interacoes.jpg" alt="Projeto 3">
+        <h3>Lorem ipsum dolor</h3>
+        <p>orem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias. Eos debitis harum rem quia aliquid sit earum accusamus non assumenda nostrum et minima nesciunt est nemo omnis?</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="secao" id="servicos">
+    <div class="titulo">  
+      <h3>O que oferecemos:</h3>
+    </div>
+
+    <div class="servicos-container">
+      <ul>
+        <li><strong>Lorem ipsum dolor</strong> Lorem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias.</li>
+        <li><strong>Lorem ipsum dolor</strong> Lorem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias.</li>
+        <li><strong>Lorem ipsum dolor</strong> Lorem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias.</li>
+        <li><strong>Lorem ipsum dolor</strong> Lorem ipsum dolor sit amet. Eos deserunt velit rem tenetur quidem sed repellat deleniti eos assumenda voluptatem est quos molestias.</li>
+      </ul>
+    </div>
+  </section>
+
+<section id="depoimentos" class="secao">
+    <div class="titulo">  
+      <h2>O que nossos clientes dizem</h2>
+    </div>
+    <div class="depoimentos-container">
+      <div class="depoimento">
+        <p>"O trabalho foi impecável! A equipe entregou antes do prazo e com altíssima qualidade."</p>
+        <h4>- João Silva, Empresário</h4>
+      </div>
+      <div class="depoimento">
+        <p>"Fiquei muito satisfeito com o atendimento e a execução dos serviços. Recomendo a todos."</p>
+        <h4>- Maria Oliveira, Engenheira</h4>
+      </div>
+      <div class="depoimento">
+        <p>"Serviço excelente, preços justos e muito profissionalismo. Nota 10 para a equipe!"</p>
+        <h4>- Pedro Santos, Arquiteto</h4>
+      </div>
+    </div>
+</section>
+
+  
+<section id="localizacao" class="secao">
+    <div class="titulo">  
+      <h2>Nossa Localização </h2>
+    </div>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1517386.6756009036!2d-73.00560382195458!3d42.02932919124594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3656de973bffd%3A0x45c6d03655830d1c!2sMassachusetts%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1740355219544!5m2!1spt-BR!2sbr" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<div id="chatbot">
+    <div id="chat-header">Chat Online</div>
+    <div id="chat-body">
+      <div id="messages">
+        <!-- Mensagens do usuário e do bot aparecerão aqui -->
+      </div>
+      <div id="chat-input">
+        <input type="text" id="userMessage" placeholder="Digite sua mensagem...">
+        <button id="sendMessage"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+        </svg></button>
+        
+        <button id="clearChatButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+          <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+        </svg></button>
+      </div>
+    </div>
+</div>
+  
+
+<section id="contato" class="secao trabalhe-conosco">
+  <div class="container-trabalhe-conosco">
+    <div class="titulo-esquerda">  
+      <h2>Venha fazer parte da nossa equipe!</h2>
+      <br>
+      <p>Estamos em busca de profissionais dedicados e talentosos.
+        Envie seu currículo e venha construir um futuro conosco!</p>
+       
+        <button onclick="window.location.href='https://forms.gle/uDzs39UCb1djx65B9'" class="contactButton" target="_blank" rel="noopener noreferrer">
+          Envie seu Curriculo
+          <div class="iconButton">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+  </button>
+    </div>
+    <div class="contato-container direita">
+      <form action="https://formspree.io/f/mannlryz" method="POST" enctype="multipart/form-data" class="form-trabalhe-conosco">
+        <h2>Entre em contato conosco</h2>
+        <input type="text" name="nome" placeholder="Nome Completo" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" placeholder="Fale um pouco sobre você" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+  
+
+
+
+<section id="faq" class="secao">
+  <div class="titulo">  
+    <h2>Perguntas Frequentes</h2>
+  </div>
+
+  <div class="faq-item">
+    <button  class="faq-question">Quais serviços vocês oferecem?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+      <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+    </svg></button>
+    <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+  </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Onde vocês atendem?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+        <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+      </svg></button>
+      <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Como faço um orçamento?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+        <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+      </svg></button>
+      <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+    </div>
+
+      <div class="faq-item">
+        <button  class="faq-question">Quais são os horários de funcionamento da empresa?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+          <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+        </svg></button>
+        <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+      </div>
+
+        <div class="faq-item">
+          <button  class="faq-question">Como posso entrar em contato com a empresa?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+            <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+          </svg></button>
+          <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+        </div>
+
+          <div class="faq-item">
+            <button  class="faq-question">Quais formas de pagamento são aceitas?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+            </svg></button>
+            <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+          </div>
+
+            <div class="faq-item">
+              <button  class="faq-question">A empresa oferece garantia nos produtos/serviços?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+              </svg></button>
+              <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+            </div>
+
+              <div class="faq-item">
+                <button  class="faq-question">A empresa trabalha com orçamento gratuito?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                  <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                </svg></button>
+                <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+              </div>
+
+                <div class="faq-item">
+                  <button  class="faq-question">Como faço para acompanhar um pedido/serviço?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                  </svg></button>
+                  <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+                </div>
+
+                  <div class="faq-item">
+                    <button  class="faq-question">Você oferece suporte ao cliente?<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                      <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                    </svg></button>
+                    <div class="faq-answer">Qui explicabo asperiores sed quia suscipit ut Quis iste est amet mollitia et veritatis tenetur est voluptatem nulla ut tenetur voluptas. Vel ducimus provident sit quibusdam Quis ut itaque culpa et reiciendis cumque qui porro voluptate. Qui consequatur iusto est quia perferendis et placeat animi. Qui inventore sequi qui ipsum expedita et ipsam galisum.</div>
+                  </div>
+</section>
+
+
+
+<a href="#inicio">
+  <button class="button-baixo" id="scrollButton">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle"  viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+    </svg>
+  </button></a>
+  
+<footer class="rodape">
+  <div class="container-rodape">
+    
+    <div class="coluna">
+      <h3>Sobre Nós</h3>
+      <p>Somos uma empresa comprometida com qualidade e inovação, oferecendo soluções sob medida para nossos clientes.</p>
+    </div>
+    
+    <div class="coluna">
+      <h3>Contato</h3>
+      <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+      <p><strong>Email:</strong> contato@empresa.com</p>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade/UF</p>
+    </div>
+
+    <div class="coluna">
+      <h3>Redes Sociais</h3>
+      <a href="#" target="_blank">Facebook</a> | 
+      <a href="#" target="_blank">Instagram</a> | 
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="coluna">
+      <h3>Links Úteis</h3>
+      <a href="#sobre">Sobre</a><br>
+      <a href="#servicos">Serviços</a><br>
+      <a href="#contato">Contato</a><br>
+      <a href="#faq">Perguntas Frequentes</a>
+    </div>
+
+  </div>
+  <div class="direitos">
+    <p>&copy; 2025 Nome da Empresa. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+<script src="buttonfixed.js" defer></script>
+<script src="carrosel.js" defer></script>
+<script src="chatbot.js" defer></script>
+<script src="faq.js" defer></script>
+
+</body>
+</html>

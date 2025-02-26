@@ -1,0 +1,111 @@
+
+<section id="sobre" class="sobre">
+    <div class="sobre-container">
+    <h1>  TechNova Solutions </h1>
+    <br>
+    <h3>TechNova Solutions: Inovando o Futuro Desde 2010</h3>
+
+    <br>
+
+    <div class="efeito-img1"> 
+    <p><b>Fundação:</b> A TechNova Solutions foi fundada em 15 de março de 2010, na cidade de São Paulo, Brasil,
+        por três jovens empreendedores visionários: Clara Mendes, Rafael Oliveira e Diego Santana.
+        Unidos por uma paixão em comum pela tecnologia e inovação, o trio começou a empresa em uma garagem, 
+        com o sonho de transformar ideias revolucionárias em soluções tecnológicas acessíveis para
+        empresas de todos os tamanhos.  
+    </p>
+    </div>
+
+
+    <div class="efeito-img2">     
+    <p>
+       <b> Missão:</b> A missão da TechNova Solutions sempre foi clara: "Capacitar empresas e indivíduos com tecnologia de
+         ponta para enfrentar os desafios do futuro."
+    </p>
+    </div>
+
+    
+    <div class="efeito-img3">     
+    <p>
+        <b>Atualmente:</b> Com mais de 300 colaboradores espalhados por 5 escritórios ao redor do mundo, 
+        a TechNova Solutions continua a crescer e a investir em novas tecnologias. A empresa se prepara para 
+        lançar seu mais recente projeto, o NovaAI, uma plataforma de inteligência artificial projetada para
+         automatizar processos empresariais e melhorar a tomada de decisões.
+    </p>    
+    </div>
+
+    
+    <div class="efeito-img4">     
+    <p>
+        <b>Visão para o Futuro:</b> A TechNova Solutions planeja se tornar uma referência global em tecnologia sustentável até 2030,
+         ajudando empresas a crescer enquanto reduzem seu impacto ambiental.
+    </p>
+    </div>
+
+
+</section>
+
+
+
+<div class="form-container">
+
+<h2> Trabalhe conosco </h2>
+<section class="contatos"  id="contatos">
+
+    <form action="https://api.staticforms.xyz/submit" method="post" class="form" enctype="multipart/form-data">
+      
+
+        <input type="hidden" name="accessKey" value="0f613212-c86a-4b95-a652-f4d5a2cbe87b">
+        <div class="form-group">
+            <input class="input" type="text" name="name"  autocomplete="off" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <input class="input" type="text" name="email" autocomplete="off" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+            <textarea class="input" name="message" autocomplete="off" placeholder="Escreva para mim" required></textarea>
+        </div>
+
+        <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html"> <!-- Optional -->
+        <input type="text" name="honeypot" style="display: none;">
+        <div class="form-group">
+          <label for="curriculo">Currículo (PDF, DOCX)</label>
+          <input type="file" id="curriculo" name="$myCustomField1" accept=".pdf, .docx" required>
+
+          <label for="file">Choose file to upload</label>
+          <input type="file" id="curriculo" name="file"/>
+        </div>
+        <div class="form-group">
+        <button id="button" type="submit" class="button-confirm email" onclick="msg()"> Encaminhar →</button>
+        </div>
+
+        
+    </form>
+
+  </div>
+  <script>
+    function msg() {
+      alert("Curriculo encaminhado com sucesso!");
+    }
+    </script>
+
+
+
+
+
+
+    const images = document.querySelectorAll('.image');
+let activeIndex = 0;
+
+function cycleImages() {
+  // Remove a classe 'active' de todas as imagens
+  images.forEach(image => image.classList.remove('active'));
+
+  // Adiciona a classe 'active' à próxima imagem
+  activeIndex = (activeIndex + 1) % images.length;
+  images[activeIndex].classList.add('active');
+}
+
+// Configura o intervalo para alternar as imagens a cada 5 segundos
+setInterval(cycleImages, 5000);
