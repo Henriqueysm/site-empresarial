@@ -1,12 +1,16 @@
 document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      button.classList.toggle('active'); // Alterna a classe active
+  button.addEventListener('click', () => {
       const answer = button.nextElementSibling;
-      if (answer.style.display === 'block') {
-        answer.style.display = 'none'; // Esconde a resposta
-      } else {
-        answer.style.display = 'block'; // Exibe a resposta
-      }
-    });
+
+      // Fecha todas as outras respostas abertas
+      document.querySelectorAll('.faq-answer').forEach(ans => {
+          if (ans !== answer) {
+              ans.style.display = 'none';
+          }
+      });
+
+      // Alterna a visibilidade da resposta clicada
+      answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
   });
-  
+});
+
