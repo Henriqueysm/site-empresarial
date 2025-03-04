@@ -13,29 +13,10 @@
 
 <body>
 
-<!-- Menu Lateral -->
-<nav class="menu-lateral ">
-
-  <div class="btn-expandir">
-      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-      </svg></span>
-  </div> <!-- botão de expandir -->
-             
-      <br>
-<div class="navegacao">
-  <ul>
-    <li class="item-menu"><a href="#inicio"><span class="txt-link">INÍCIO</span></a></li>
-    <li class="item-menu"><a href="#sobre"><span class="txt-link">SOBRE</span></a></li>
-    <li class="item-menu"><a href="#portfolio"><span class="txt-link">PORTFOLIO</span></a></li>
-    <li class="item-menu"><a href="#servicos"><span class="txt-link">SERVIÇOS</span></a></li>
-    <li class="item-menu"><a href="#depoimentos"><span class="txt-link">DEPOIMENTOS</span></a></li>
-    <li class="item-menu"><a href="#localizacao"><span class="txt-link">LOCALIZAÇÃO</span></a></li>
-    <li class="item-menu"><a href="#contato"><span class="txt-link">TRABALHE CONOSCO</span></a></li>
-    <li class="item-menu"><a href="#faq"><span class="txt-link">PERGUNTAS FREQUENTES</span></a></li>
-  </ul>
-</div>
-</nav>
+<script src="buttonfixed.js" defer></script>
+<script src="carrosel.js" defer></script>
+<script src="chatbot.js" defer></script>
+<script src="faq.js" defer></script>
 <script>
   // Seleciona a navbar
   const nav = document.querySelector('nav');
@@ -50,14 +31,34 @@
   });
 </script>
 
-<script>
-  const menuLateral = document.querySelector('.menu-lateral');
-  const botaoExpandir = document.querySelector('.btn-expandir');
 
-  botaoExpandir.addEventListener('click', () => {
-      menuLateral.classList.toggle('ativo');
-  });
-</script>
+<header id="menu">
+  <a href="index.html" class="logo">
+    <img src="imagens/logo.png" alt="Logo">
+  </a>
+  <button class="botão-toggle" id="menu-toggle" aria-label="Abrir Menu">
+    ☰
+  </button>
+  <nav id="nav-menu" class="hidden">
+    <a href="#inicio">INÍCIO</a>
+    <a href="#sobre" class="botao-saga">SOBRE</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#servicos">SERVIÇOS</a>
+    <a href="#depoimentos">DEPOIMENTOS</a>
+    <a href="#localizacao">LOCALIZAÇÃO</a>
+    <a href="#contato">TRABALHE CONOSCO</a>
+    <a href="#faq">PERGUNTAS FREQUENTES</a>
+  </nav>
+
+  <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+const navMenu = document.getElementById("nav-menu");
+navMenu.classList.toggle("show");
+});
+  </script>
+</header>
+
+
 
 <!-- Conteúdo -->
 <div class="container content">
@@ -341,10 +342,7 @@
 
 
 
-<script src="buttonfixed.js" defer></script>
-<script src="carrosel.js" defer></script>
-<script src="chatbot.js" defer></script>
-<script src="faq.js" defer></script>
+
 
 </body>
 </html>
